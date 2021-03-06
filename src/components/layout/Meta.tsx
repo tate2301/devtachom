@@ -1,11 +1,8 @@
-import Head from "next/head";
+export default function Meta() {
 
-const Meta = () => {
-  return (
-    <Head>
-      <title>Project Name</title>
-    </Head>
-  );
-};
+    return (
+        <div>
 
-export default Meta;
+        </div>
+    );
+}
