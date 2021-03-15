@@ -8,6 +8,7 @@ export default function Blog({data}: any) {
     return (
         <Box>
             <Head>
+                <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
 
                 <title>Blog | Tachom</title>
             </Head>
