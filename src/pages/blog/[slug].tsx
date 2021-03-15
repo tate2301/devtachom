@@ -3,6 +3,7 @@ import Head from "next/head";
 import { Image, useQuerySubscription } from "react-datocms";
 import { IArticleProps, request } from "../../lib/dato"
 
+
 export async function getStaticPaths() {
   const data = await request({ query: `{ allArticles { slug } }` });
 
@@ -64,7 +65,7 @@ export async function getStaticProps({ params, preview = false }: any) {
       }
     `,
     variables: {
-      id: params.post_id,
+      id: params.slug,
     },
   };
 
