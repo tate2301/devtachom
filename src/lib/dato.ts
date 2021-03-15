@@ -16,6 +16,8 @@ export interface IArticleProps {
         thumbnail: { 
             url: string; 
         }; 
+        title: string;
+        slug: string;
         category: { 
             name: string | number | boolean | {} | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactNodeArray | React.ReactPortal | null | undefined; 
         }; 
@@ -24,6 +26,7 @@ export interface IArticleProps {
         author: { 
             profilepicture: { 
                 responsiveImage: ResponsiveImageType; 
+                url: string;
             }; 
             fullname: boolean | React.ReactChild | React.ReactFragment | React.ReactPortal | null | undefined; 
             jobposition: boolean | React.ReactChild | React.ReactFragment | React.ReactPortal | null | undefined; 

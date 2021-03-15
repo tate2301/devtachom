@@ -2,12 +2,12 @@ import { IArticleProps, request } from "../../lib/dato";
 import Head from "next/head";
 import { Box, Flex, Grid, Heading, Text, Img as ChakraImage, SimpleGrid } from "@chakra-ui/react";
 import React from "react";
+import Link from "next/link";
 
 export default function Blog({data}: any) {
     return (
         <Box>
             <Head>
-            <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
 
                 <title>Blog | Tachom</title>
             </Head>
@@ -23,22 +23,30 @@ export default function Blog({data}: any) {
                 <Box py={16}>
                     <Box className="grid grid-cols-1 md:grid-cols-2 gap-16">
                         <Box rounded="md" h={{base: 300, md: 500}}>
-                            <ChakraImage 
-                                src={data?.allArticles[0]?.thumbnail?.url}
-                                objectFit="cover" 
-                                h="full"
-                                w="full"
-                                rounded="lg"
-                            />
+                            <Link href={`blog/${data?.allArticles[0]?.slug}`}>
+                                    <a className="w-full h-full">
+                                        <ChakraImage 
+                                            src={data?.allArticles[0]?.thumbnail?.url}
+                                            objectFit="cover" 
+                                            h="full"
+                                            w="full"
+                                            rounded="lg"
+                                        />
+                                    </a>
+                                </Link>
                         </Box>
                         <Flex direction="column" justifyContent="space-between" h={"full"}>
                             <Box fontSize="lg">
                                 <Text textStyle="uppercase" fontWeight="600" color="gray.500">
                                     {data?.allArticles[0]?.category.name} &bull; {new Date(data?.allArticles[0]?.createdAt).toDateString()} 
                                 </Text>
-                                <Heading fontSize={{base: "3xl", md: "5xl"}} my={2}>
-                                    {data?.allArticles[0]?.title}
-                                </Heading>
+                                <Link href={`blog/${data?.allArticles[0]?.slug}`}>
+                                    <a>
+                                        <Heading fontSize={{base: "3xl", md: "5xl"}} my={2}>
+                                            {data?.allArticles[0]?.title}
+                                        </Heading>
+                                    </a>
+                                </Link>
 
                                 <Text noOfLines={4} fontSize={{base: "lg", md: "2xl"}}>
                                     <div dangerouslySetInnerHTML={{
@@ -74,21 +82,29 @@ export default function Blog({data}: any) {
                         {data?.allArticles.slice(1, 3).map((article: IArticleProps, key: React.Key | null | undefined) => (
                             <Box className="col-span-1" key={key}>
                                 <Box h={300}>
-                                    <ChakraImage 
-                                        src={article.thumbnail?.url}
-                                        objectFit="cover" 
-                                        h="full"
-                                        w="full"
-                                        rounded="lg"
-                                    />
+                                <   Link href={`blog/${article.slug}`}>
+                                        <a>
+                                            <ChakraImage 
+                                                src={article.thumbnail?.url}
+                                                objectFit="cover" 
+                                                h="full"
+                                                w="full"
+                                                rounded="lg"
+                                            />
+                                        </a>
+                                    </Link>
                                 </Box>
                                 <Box my={4}>
                                     <Text textStyle="uppercase" fontWeight="600" color="gray.500">
                                         {article.category.name} &bull; {new Date(article.createdAt).toDateString()} 
                                     </Text>
-                                    <Heading fontSize={"3xl"} my={2}>
-                                        {data?.allArticles[0]?.title}
-                                    </Heading>
+                                    <Link href={`blog/${article.slug}`}>
+                                        <a>
+                                            <Heading fontSize={"3xl"} my={2}>
+                                                {article.title}
+                                            </Heading>
+                                        </a>
+                                    </Link>
 
                                     <Text noOfLines={2} my={4} fontSize={{base: "xl"}}>
                                         <div dangerouslySetInnerHTML={{
@@ -98,7 +114,7 @@ export default function Blog({data}: any) {
 
                                     <Box mt={4}>
                                         <Box className="flex flex-nowrap">
-                                            <Box h={12} w={12} mr={2}>
+                                            <Box className="w-12 h-12 mr-4">
                                                 <ChakraImage 
                                                     src={article.author.profilepicture.url} 
                                                     objectFit="cover"
@@ -129,22 +145,29 @@ export default function Blog({data}: any) {
                         {data?.allArticles.slice(3, data.length).map((article: IArticleProps, key: React.Key | null | undefined) => (
                             <Box className="col-span-1" key={key}>
                                 <Box h={300} w={{base: "full"}}>
-                                    <ChakraImage 
-                                        src={article.thumbnail?.url}
-                                        objectFit="cover" 
-                                        h="full"
-                                        w="full"
-                                        rounded="lg"
-                                    />
+                                    <Link href={`blog/${article.slug}`}>
+                                        <a>
+                                            <ChakraImage 
+                                                src={article.thumbnail?.url}
+                                                objectFit="cover" 
+                                                h="full"
+                                                w="full"
+                                                rounded="lg"
+                                            />
+                                        </a>
+                                    </Link>
                                 </Box>
                                 <Box my={4}>
                                     <Text textStyle="uppercase" fontWeight="600" color="gray.500">
                                         {article.category.name} &bull; {new Date(article.createdAt).toDateString()} 
                                     </Text>
-                                    <Heading fontSize={"3xl"} my={2}>
-                                        {data?.allArticles[0]?.title}
-                                    </Heading>
-
+                                    <Link href={`blog/${article.slug}`}>
+                                        <a>
+                                            <Heading fontSize={"3xl"} my={2}>
+                                                {article.title}
+                                            </Heading>
+                                        </a>
+                                    </Link>
                                     <Text noOfLines={2} my={4} fontSize={{base: "xl"}}>
                                         <div dangerouslySetInnerHTML={{
                                             __html: article.body
@@ -190,6 +213,7 @@ const BLOG_POSTS_QUERY = `query HomePage($limit: IntType) {
         id
         title
         subtitle
+        slug
         body
         createdAt
         category {

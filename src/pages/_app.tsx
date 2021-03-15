@@ -6,6 +6,7 @@ import { Global, css } from "@emotion/react";
 
 import Layout from "../components/layout";
 import customTheme from "../styles/customTheme";
+import 'tailwindcss/tailwind.css';
 import "../styles/globals.css";
 
 const GlobalStyles = css`
