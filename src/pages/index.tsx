@@ -1,4 +1,5 @@
 import { Box, Flex, Heading, Link, Text, Image } from "@chakra-ui/react";
+import Head from "next/head";
 import Feature from "../components/sections/Feature";
 import HeadingSection from "../components/sections/HeadingSection";
 import Jumbotron from "../components/sections/Jumbotron";
@@ -9,6 +10,10 @@ import { IArticleProps, request } from "../lib/dato";
 const Home = ({data}: any) => {
   return (
     <Box mb={8} w="full">
+      <Head>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
+        <title>An African Digital Agency | Tachom</title>
+      </Head>
       <Jumbotron />
       <ReportBanner />
       
