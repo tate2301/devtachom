@@ -1,4 +1,11 @@
 const withPWA = require("next-pwa");
+const sitemap = require('nextjs-sitemap-generator');  
+
+sitemap({  
+  baseUrl: '',  
+  pagesDirectory: __dirname + "/src/pages",  
+  targetDirectory : 'static/'  
+});
 
 module.exports = withPWA({
   pwa: {

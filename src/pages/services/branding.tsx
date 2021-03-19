@@ -11,7 +11,6 @@ export default function Branding() {
       <Flex 
             color="gray.900"
             px={4} 
-            backgroundColor={"green.100"}
             style={{height: "100vh"}}>
             <Grid templateColumns={{base:"repeat(1, 1fr)", md: "repeat(2, 1fr)"}} maxWidth={1280} w="full" marginX="auto" marginY={"auto"} h="auto">
                 <Box mt={{base: 16, md: 0}} pr={{base: 0, lg: 12}}>

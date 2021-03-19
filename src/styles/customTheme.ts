@@ -5,7 +5,7 @@ const customTheme = extendTheme({
     ...theme.fonts,
     /** Example */
     body: "Inter, sans-serif",
-    heading: "Cooper Lt BT, serif",
+    heading: "Playfair Display, serif",
   },
   colors: {
     ...theme.colors,
