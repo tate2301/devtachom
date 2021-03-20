@@ -2,7 +2,8 @@ import { Box, Heading, Text } from "@chakra-ui/layout";
 import Head from "next/head";
 import { Image, useQuerySubscription } from "react-datocms";
 import { IArticleProps, request } from "../../lib/dato"
-
+import { IconButton } from "@chakra-ui/react"
+import { FaFacebookF } from "react-icons/fa";
 
 export async function getStaticPaths() {
   const data = await request({ query: `{ allArticles { slug } }` });
@@ -65,7 +66,7 @@ export async function getStaticProps({ params, preview = false }: any) {
       }
     `,
     variables: {
-      id: params.slug,
+      slug: params.slug,
     },
   };
 
@@ -106,14 +107,26 @@ export default function Article({ data, preview }: any) {
           <div className="flex">
             <Image data={article.author.profilepicture.responsiveImage} className="h-12 w-12 rounded-full m-auto mr-4" />
           </div>
-          <div>
-                <p className="font-bold mb-2">
-                    {article.author.fullname}
-                </p>
-                <p>
-                    {article.author.jobposition}
-                </p>
-            </div>
+          <div className="flex justify-between w-full">
+                <div>
+                  <p className="font-bold mb-2">
+                      {article.author.fullname}
+                  </p>
+                  <p>
+                      {article.author.jobposition}
+                  </p>
+                </div>
+                <div className="flex space-x-4">
+                  <a href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`} target="_blank">
+                    <IconButton
+                      colorScheme="messenger"
+                      aria-label="Share to Facebook"
+                      rounded="full"
+                      icon={<FaFacebookF />}
+                    />
+                  </a>
+                </div>
+          </div>
         </div>
       
     </div>
