@@ -3,7 +3,7 @@ import Head from "next/head";
 import { Image, useQuerySubscription } from "react-datocms";
 import { IArticleProps, request } from "../../lib/dato"
 import { IconButton } from "@chakra-ui/react"
-import { FaFacebookF } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
 export async function getStaticPaths() {
   const data = await request({ query: `{ allArticles { slug } }` });
@@ -82,6 +82,12 @@ export async function getStaticProps({ params, preview = false }: any) {
 export default function Article({ data, preview }: any) {
   const {article} = data;
 
+  let href = undefined
+
+  if(typeof window !== "undefined") {
+    href = window.location.href
+  }
+
   return (
     <div className="px-4 mt-20 sm:px-6 md:px-8 mb-10 sm:mb-16 md:mb-20 relative max-w-screen-md xl:max-w-screen-md mx-auto">
       <Head>
@@ -117,7 +123,7 @@ export default function Article({ data, preview }: any) {
                   </p>
                 </div>
                 <div className="flex space-x-4">
-                  <a href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`} target="_blank">
+                  <a href={`https://www.facebook.com/sharer/sharer.php?u=${href}`} target="_blank">
                     <IconButton
                       colorScheme="messenger"
                       aria-label="Share to Facebook"
@@ -125,6 +131,27 @@ export default function Article({ data, preview }: any) {
                       icon={<FaFacebookF />}
                     />
                   </a>
+                  <a
+                    target="_blank"
+                    href={`https://twitter.com/intent/tweet?text=Check out this amazing post by Tachom - ${article.title} \n ${href}`}>
+                    <IconButton
+                        colorScheme="twitter"
+                        aria-label="Tweet"
+                        rounded="full"
+                        icon={<FaTwitter />}
+                      />
+                  </a>
+                  <a 
+                    target="_blank"
+                    href={`https://wa.me/?text=Check out this amazing post by Tachom - ${article.title} \n ${href}`}>
+                    <IconButton
+                        colorScheme="whatsapp"
+                        aria-label="Tweet"
+                        rounded="full"
+                        icon={<FaWhatsapp />}
+                      />
+                  </a>
+
                 </div>
           </div>
         </div>
