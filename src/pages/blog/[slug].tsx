@@ -23,6 +23,7 @@ export async function getStaticProps({ params, preview = false }: any) {
           subtitle
           slug
           body
+          createdAt
           category {
             id
             name
@@ -91,6 +92,32 @@ export default function Article({ data, preview }: any) {
   return (
     <div className="px-4 mt-20 sm:px-6 md:px-8 mb-10 sm:mb-16 md:mb-20 relative max-w-screen-md xl:max-w-screen-md mx-auto">
       <Head>
+      <script type="application/ld+json">
+        {{
+          "@context": "https://schema.org",
+          "@type": "NewsArticle",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://google.com/article"
+          },
+          "headline": article.title,
+          "image": [article.thumbnail],
+          "datePublished": article.createdAt,
+          "dateModified": article.updatedAt,
+          "author": {
+            "@type": "Person",
+            "name": article.author
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Tachom",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://devtachom.com/logo-light.png"
+            }
+          }
+        }}
+        </script>
         <title>{article.title}</title>
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
         <link

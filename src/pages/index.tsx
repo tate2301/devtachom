@@ -13,6 +13,14 @@ const Home = ({data}: any) => {
       <Head>
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
         <title>An African Digital Agency | Tachom</title>
+        <script type="application/ld+json">
+          {{
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://devtachom.com",
+            "logo": "https://devtachom.com/img/logo-light.png"
+          }}
+        </script>
       </Head>
       <Jumbotron />
       <ReportBanner />
