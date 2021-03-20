@@ -7,7 +7,7 @@ export default function Websites() {
     <Box>
       <Head>
         <title>Mobile Applications | Tachom</title>
-        <script dangerouslySetInnerHTML={{ __html: `{
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{
             "@context": "https://schema.org",
             "@type": "Service",
             "name": "Mobile Applications",
