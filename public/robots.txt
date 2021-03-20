@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://devtachom.com/sitemap.xml

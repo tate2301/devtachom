@@ -1,11 +1,4 @@
 const withPWA = require("next-pwa");
-const sitemap = require('nextjs-sitemap-generator');  
-
-sitemap({  
-  baseUrl: '',  
-  pagesDirectory: __dirname + "/src/pages",  
-  targetDirectory : 'public/'  
-});
 
 module.exports = withPWA({
   pwa: {
@@ -18,4 +11,12 @@ module.exports = withPWA({
     register: true,
   },
   target: "serverless",
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      require('./sitemapper');
+    }
+
+    return config;
+  }
+
 });
