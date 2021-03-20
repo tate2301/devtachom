@@ -196,3 +196,5 @@ export async function getServerSideProps(context: any) {
       props: { data }
     };
 }
+
+export const config = { amp: true }

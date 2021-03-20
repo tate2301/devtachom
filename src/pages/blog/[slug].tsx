@@ -188,3 +188,5 @@ export default function Article({ data, preview }: any) {
     </div>
   );
 }
+
+export const config = { amp: true }

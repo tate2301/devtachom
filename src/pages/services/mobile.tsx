@@ -233,3 +233,5 @@ export default function Websites() {
     </Box>
   )
 }
+
+export const config = { amp: true }

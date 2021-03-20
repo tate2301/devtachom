@@ -48,3 +48,5 @@ export default function Index() {
     </Box>
   )
 }
+
+export const config = { amp: true }

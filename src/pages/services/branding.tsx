@@ -234,3 +234,5 @@ export default function Branding() {
     </Box>
   )
 }
+
+export const config = { amp: true }
