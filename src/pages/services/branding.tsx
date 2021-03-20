@@ -41,7 +41,7 @@ export default function Branding() {
                 </Box>
                 <Flex mt={{base: 16, md: 0}}>
                   <Box h={400} maxWidth={600} marginX="auto" marginY={"auto"}>
-                    <Image h="full" w="full" objectFit="cover" objectPosition="top" marginX="auto" src="https://cdn.dribbble.com/users/1720295/screenshots/14465398/media/4e8044a679f6dcc5a8e646b325b8fb8e.png?compress=1&resize=800x600" />
+                    <Image h="full" w="full" objectFit="cover" objectPosition="top" marginX="auto" src="https://cdn.dribbble.com/users/958859/screenshots/14329344/media/64629c2f801ec69accdce8b302af8e56.jpg?compress=1&resize=800x600" />
                   </Box>
                 </Flex>
             </Grid>

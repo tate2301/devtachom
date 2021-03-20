@@ -9,6 +9,8 @@ export default function LetsWorkTogether() {
                 <Heading fontSize={"4xl"} my={4}>Have a project in mind?</Heading>
                 <Text fontSize={"2xl"}>Let's work together</Text>
                     <Button
+                        as="a"
+                        href="https://ojn1yd5k2bm.typeform.com/to/nA3tGPK2"
                         marginX="auto"
                         mt={8}
                         leftIcon={<ArrowForwardIcon />}

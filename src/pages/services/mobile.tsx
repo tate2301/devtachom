@@ -42,7 +42,7 @@ export default function Websites() {
                 </Box>
                 <Flex mt={{base: 16, md: 0}}>
                   <Box h={400} maxWidth={600} marginX="auto" marginY={"auto"}>
-                    <Image h="full" w="full" objectFit="cover" objectPosition="top" marginX="auto" src="https://cdn.dribbble.com/users/1720295/screenshots/14465398/media/4e8044a679f6dcc5a8e646b325b8fb8e.png?compress=1&resize=800x600" />
+                    <Image h="full" w="full" objectFit="cover" objectPosition="top" marginX="auto" src="https://cdn.dribbble.com/users/1998175/screenshots/14454257/media/8a155e2e9e853b868663fcf57cca38f5.jpg?compress=1&resize=800x600" />
                   </Box>
                 </Flex>
             </Grid>

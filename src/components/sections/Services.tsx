@@ -26,7 +26,7 @@ export default function Services() {
                         linkText="Start working online"
                         isLarge={true}
                         description="The way your company interacts with the outside world."
-                        thumbnail="/img/urban-line-web.svg"
+                        thumbnail="https://cdn.dribbble.com/users/1720295/screenshots/14465398/media/4e8044a679f6dcc5a8e646b325b8fb8e.png?compress=1&resize=800x600"
                         />
             </Grid>
             <Grid mt={8} templateColumns={{base:"repeat(1, 1fr)"}} gap={4}>
@@ -35,14 +35,14 @@ export default function Services() {
                         link="/services/mobile"
                         linkText="Build for customers"
                         description="Cross platform native and hybrid mobile apps for Android & iOS."
-                        thumbnail="/img/urban-line-apps.svg"
+                        thumbnail="https://cdn.dribbble.com/users/1998175/screenshots/14454257/media/8a155e2e9e853b868663fcf57cca38f5.jpg?compress=1&resize=800x600"
                         />
                     <ServicesCard
                         title="Enteprise Software"
                         link="/services/enterprise"
                         linkText="Manage like a boss"
                         description="High performance software and design systems."
-                        thumbnail="/img/urban-urban-line.svg"
+                        thumbnail="https://jellypepper.com/_next/image?url=%2Fimages%2Fproduct-deliverable.png&w=1920&q=100"
                         isLarge={true}
                         />
                     

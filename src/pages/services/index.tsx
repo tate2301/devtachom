@@ -43,10 +43,6 @@ export default function Index() {
         </Flex>
       <Box maxWidth={1080} marginX="auto" p={4} mb={32}>
         <Services />
-        <HeadingSection
-          title={"Our tools."}
-          tagline={"As a full service digital agency, Tachom uniquely provides our clients with integrated multidisciplinary tools."}
-        />
       </Box>
       
     </Box>

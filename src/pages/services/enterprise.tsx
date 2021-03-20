@@ -12,7 +12,6 @@ export default function Websites() {
       <Flex 
             color="gray.900"
             px={4} 
-            backgroundColor={"green.100"}
             style={{height: "100vh"}}>
             <Grid templateColumns={{base:"repeat(1, 1fr)", md: "repeat(2, 1fr)"}} maxWidth={1280} w="full" marginX="auto" marginY={"auto"} h="auto">
                 <Box mt={{base: 16, md: 0}} pr={{base: 0, lg: 12}}>
@@ -43,7 +42,7 @@ export default function Websites() {
                 </Box>
                 <Flex mt={{base: 16, md: 0}}>
                   <Box h={400} maxWidth={600} marginX="auto" marginY={"auto"}>
-                    <Image h="full" w="full" objectFit="cover" objectPosition="top" marginX="auto" src="https://cdn.dribbble.com/users/1720295/screenshots/14465398/media/4e8044a679f6dcc5a8e646b325b8fb8e.png?compress=1&resize=800x600" />
+                    <Image h="full" w="full" objectFit="cover" objectPosition="top" marginX="auto" src="https://jellypepper.com/_next/image?url=%2Fimages%2Fproduct-deliverable.png&w=1920&q=100" />
                   </Box>
                 </Flex>
             </Grid>
@@ -213,22 +212,7 @@ export default function Websites() {
               </Box>
             </Grid>
             
-          <Divider my={32} />
         </Box>
-        <Flex justify="center" flexWrap="wrap" fontSize="lg" rounded={"lg"} my={16} p={16} backgroundColor="green.200">
-          <Box w="3/4" textAlign="center">
-            <Image src={"/img/urban-line-blocks.svg"} h="40" marginX="auto" my={16} />
-            <Heading as="h1" fontSize="3xl">Curious about our technology?.</Heading>
-            <Button
-                mt={8}
-                marginX="auto"
-                leftIcon={<ArrowForwardIcon />}
-                size="sm"
-                rounded="full">
-                  Find out here
-            </Button>
-          </Box>
-        </Flex>
         <Box fontSize="lg" rounded={"lg"}>
           <Divider my={32} />
             <Heading as="h1" fontSize="3xl">You’re in good company</Heading>

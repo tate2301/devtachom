@@ -13,7 +13,7 @@ import {
     Divider,
   } from '@chakra-ui/react';
   import { ReactNode } from 'react';
-  import { FaGithub, FaTwitter, FaYoutube } from 'react-icons/fa';
+  import { FaGithub, FaTwitter, FaWhatsapp, FaYoutube } from 'react-icons/fa';
   import { BiMailSend } from 'react-icons/bi';
 import Logo from '../Logo';
   
@@ -22,10 +22,12 @@ const SocialButton = ({
     children,
     label,
     href,
+    colorScheme
 }: {
     children: ReactNode;
     label: string;
     href: string;
+    colorScheme: string;
   }) => {
     return (
       <chakra.button
@@ -72,14 +74,21 @@ export default function Footer() {
                 © {new Date().getFullYear()} Tachom Private Limited. All rights reserved
               </Text>
               <Stack direction={'row'} spacing={6}>
-                <SocialButton label={'Twitter'} href={'#'}>
+                <SocialButton colorScheme="twitter" label={'Twitter'} href={'https://twitter.com/TachomDevGroup'}>
                   <FaTwitter />
                 </SocialButton>
-                <SocialButton label={'YouTube'} href={'#'}>
-                  <FaYoutube />
-                </SocialButton>
-                <SocialButton label={'Instagram'} href={'#'}>
+
+                <SocialButton 
+                  colorScheme="instagram"
+                  label={'GitHub'} href={'https://github.com/Tachom'}>
                   <FaGithub />
+                </SocialButton>
+                <SocialButton
+                  colorScheme="whatsapp"
+                  label="WhatsApp"
+                  href={`https://wa.me/263782974806?text=Hi,`}>
+                  <FaWhatsapp />
+
                 </SocialButton>
               </Stack>
             </Stack>

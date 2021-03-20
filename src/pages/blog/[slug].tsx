@@ -109,20 +109,23 @@ export default function Article({ data, preview }: any) {
             <Image data={article.thumbnail.responsiveImage} className="h-full rounded-lg m-auto" />
         </Box>
       <div className="prose prose-lg my-12" dangerouslySetInnerHTML={{__html: article.body}} />
-      <div className="pt-8 flex border-t border-gray-200">
-          <div className="flex">
-            <Image data={article.author.profilepicture.responsiveImage} className="h-12 w-12 rounded-full m-auto mr-4" />
-          </div>
-          <div className="flex justify-between w-full">
-                <div>
-                  <p className="font-bold mb-2">
-                      {article.author.fullname}
-                  </p>
-                  <p>
-                      {article.author.jobposition}
-                  </p>
+      <div className="pt-8 flex justify-between flex-wrap border-t border-gray-200">
+        <div className="flex w-full justify-between">
+              <div className="flex w-full md:w-1/2">
+                <div className="flex">
+                  <Image data={article.author.profilepicture.responsiveImage} className="h-12 w-12 rounded-full m-auto mr-4" />
                 </div>
-                <div className="flex space-x-4">
+                  <div>
+                    <p className="font-bold mb-2">
+                        {article.author.fullname}
+                    </p>
+                    <p>
+                        {article.author.jobposition}
+                    </p>
+                  </div>
+                </div>
+              
+              <div className="flex justify-start md:justify-end space-x-4 w-full md:w-1/2 mt-4">
                   <a href={`https://www.facebook.com/sharer/sharer.php?u=${href}`} target="_blank">
                     <IconButton
                       colorScheme="messenger"
@@ -152,10 +155,10 @@ export default function Article({ data, preview }: any) {
                       />
                   </a>
 
-                </div>
+            </div>
           </div>
         </div>
-      
+        
     </div>
   );
 }

@@ -74,11 +74,11 @@ export default function Navbar(props: any) {
                     direction={["column", "row", "row", "row"]}
                     pt={[4, 4, 0, 0]}
                     >
-                    {true && <MenuItem to="/how">Process</MenuItem>}
+                    {false && <MenuItem to="/how">Process</MenuItem>}
                     <MenuItem to="/services">Services</MenuItem>
                     {false && <MenuItem to="/about">About</MenuItem>}
                     <MenuItem to="/blog">Blog</MenuItem>
-                    <MenuItem to="#">
+                    <MenuItem to="https://ojn1yd5k2bm.typeform.com/to/nA3tGPK2">
                         <Button
                         leftIcon={<ArrowForwardIcon />}
                         outlineColor="gray.900"
