@@ -1,4 +1,5 @@
 import { Box, Flex, Text, Spacer, Grid, Image, Heading, UnorderedList, ListItem, Button } from "@chakra-ui/react";
+import Head from "next/head";
 import Link from "next/link";
 import HeadingSection from "../../components/sections/HeadingSection";
 import Services from "../../components/sections/Services";
@@ -6,6 +7,9 @@ import Services from "../../components/sections/Services";
 export default function Index() {
   return(
     <Box>
+      <Head>
+        <title>Services | Tachom</title>
+      </Head>
       <Flex 
             color="gray.900"
             px={4} 
