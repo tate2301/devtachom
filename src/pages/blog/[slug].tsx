@@ -14,7 +14,7 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ params, preview = false }: any) {
+export async function getStaticProps({ params, preview = false,  }: any) {
   const graphqlRequest = {
     query: `query PostBySlug($slug: String) {
         article(filter: {slug: {eq: $slug}}) {
