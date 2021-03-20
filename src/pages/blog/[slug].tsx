@@ -92,7 +92,7 @@ export default function Article({ data, preview }: any) {
   return (
     <div className="px-4 mt-20 sm:px-6 md:px-8 mb-10 sm:mb-16 md:mb-20 relative max-w-screen-md xl:max-w-screen-md mx-auto">
       <Head>
-      <script dangerouslySetInnerHTML={{__html: `{
+      <script type="application/ld+json" dangerouslySetInnerHTML={{__html: `{
           "@context": "https://schema.org",
           "@type": "NewsArticle",
           "mainEntityOfPage": {
@@ -100,12 +100,12 @@ export default function Article({ data, preview }: any) {
             "@id": "https://google.com/article"
           },
           "headline": ${article.title},
-          "image": [${article.thumbnail}],
+          "image": [${article.thumbnail.src}],
           "datePublished": ${article.createdAt},
           "dateModified": ${article.updatedAt},
           "author": {
             "@type": "Person",
-            "name": ${article.author}
+            "name": ${article.author.fullname}
           },
           "publisher": {
             "@type": "Organization",
