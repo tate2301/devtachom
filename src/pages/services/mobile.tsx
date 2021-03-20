@@ -7,6 +7,18 @@ export default function Websites() {
     <Box>
       <Head>
         <title>Mobile Applications | Tachom</title>
+        <script type="application/ld+json">
+          {{
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Mobile Applications",
+            "description": "We develop fast, snappy mobile apps that users love.",
+            "provider": {
+              "@type": "Organization",
+              "name": "Tachom",
+            }
+          }}
+      </script>
       </Head>
       <Flex 
             color="gray.900"
