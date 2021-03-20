@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://devtachom.com/Sitemap</loc>
+  </url>
+
+  <url>
+    <loc>https://devtachom.com/about</loc>
+  </url>
+
+  <url>
+    <loc>https://devtachom.com/how</loc>
+  </url>
+
+  <url>
+    <loc>https://devtachom.com</loc>
+  </url>
+
+  <url>
+    <loc>https://devtachom.com/terms</loc>
+  </url>
+
+  <url>
+    <loc>https://devtachom.com/blog/[slug]</loc>
+  </url>
+
+  <url>
+    <loc>https://devtachom.com/blog/index</loc>
+  </url>
+
+  <url>
+    <loc>https://devtachom.com/services/branding</loc>
+  </url>
+
+  <url>
+    <loc>https://devtachom.com/services/enterprise</loc>
+  </url>
+
+  <url>
+    <loc>https://devtachom.com/services/index</loc>
+  </url>
+
+  <url>
+    <loc>https://devtachom.com/services/mobile</loc>
+  </url>
+
+  <url>
+    <loc>https://devtachom.com/services/websites</loc>
+  </url>
+</urlset>
