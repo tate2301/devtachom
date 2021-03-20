@@ -7,7 +7,7 @@ export default function Websites() {
     <Box>
       <Head>
         <title>Mobile Applications | Tachom</title>
-        <script dangerouslySetInnerHTML={{ __html: `{{
+        <script dangerouslySetInnerHTML={{ __html: `{
             "@context": "https://schema.org",
             "@type": "Service",
             "name": "Mobile Applications",
@@ -16,7 +16,7 @@ export default function Websites() {
               "@type": "Organization",
               "name": "Tachom",
             }
-          }}`}} />
+          }`}} />
       </Head>
       <Flex 
             color="gray.900"
