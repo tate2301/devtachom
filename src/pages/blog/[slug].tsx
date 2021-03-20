@@ -50,6 +50,7 @@ export async function getStaticProps({ params, preview = false }: any) {
           }
           thumbnail {
             id
+            url
             responsiveImage(imgixParams: { fit: crop, w: 300, h: 300, auto: format }) {
               srcSet
               webpSrcSet
@@ -100,9 +101,9 @@ export default function Article({ data, preview }: any) {
             "@id": "https://google.com/article"
           },
           "headline": ${article.title},
-          "image": [${article.thumbnail.src}],
+          "image": [${article.thumbnail.url}],
           "datePublished": ${article.createdAt},
-          "dateModified": ${article.updatedAt},
+          "dateModified": ${article.updatedAt || article.createdAt},
           "author": {
             "@type": "Person",
             "name": ${article.author.fullname}
