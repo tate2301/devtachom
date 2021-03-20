@@ -92,21 +92,20 @@ export default function Article({ data, preview }: any) {
   return (
     <div className="px-4 mt-20 sm:px-6 md:px-8 mb-10 sm:mb-16 md:mb-20 relative max-w-screen-md xl:max-w-screen-md mx-auto">
       <Head>
-      <script type="application/ld+json">
-        {{
+      <script dangerouslySetInnerHTML={{__html: `{
           "@context": "https://schema.org",
           "@type": "NewsArticle",
           "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://google.com/article"
           },
-          "headline": article.title,
-          "image": [article.thumbnail],
-          "datePublished": article.createdAt,
-          "dateModified": article.updatedAt,
+          "headline": ${article.title},
+          "image": [${article.thumbnail}],
+          "datePublished": ${article.createdAt},
+          "dateModified": ${article.updatedAt},
           "author": {
             "@type": "Person",
-            "name": article.author
+            "name": ${article.author}
           },
           "publisher": {
             "@type": "Organization",
@@ -116,8 +115,7 @@ export default function Article({ data, preview }: any) {
               "url": "https://devtachom.com/logo-light.png"
             }
           }
-        }}
-        </script>
+        }`}} />
         <title>{article.title}</title>
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
         <link
