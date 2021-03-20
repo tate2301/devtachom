@@ -31,3 +31,5 @@ const Layout = ({ children }: LayoutProps) => {
 };
 
 export default Layout;
+
+export const config = { amp: true }

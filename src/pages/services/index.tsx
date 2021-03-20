@@ -49,4 +49,3 @@ export default function Index() {
   )
 }
 
-export const config = { amp: true }

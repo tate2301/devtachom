@@ -235,4 +235,3 @@ export default function Branding() {
   )
 }
 
-export const config = { amp: true }

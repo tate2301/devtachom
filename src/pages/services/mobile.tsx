@@ -234,4 +234,3 @@ export default function Websites() {
   )
 }
 
-export const config = { amp: true }
