@@ -50,6 +50,50 @@ class MyDocument extends Document {
           <meta name="msapplication-TileColor" content="#ffffff"/>
           <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
           <meta name="theme-color" content="#ffffff"></meta>
+          
+                  <script
+                async
+                src="https://www.googletagmanager.com/gtag/js?id=[G-X82GJN5CN1]"
+              />
+
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', '[G-X82GJN5CN1]');
+                `,
+            }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({ 
+            "@context": "https://schema.org/", 
+            "@type": "BreadcrumbList", 
+            "itemListElement": [{
+              "@type": "ListItem", 
+              "position": 1, 
+              "name": "Branding",
+              "item": "https://devtachom.com/services/branding"  
+            },{
+              "@type": "ListItem", 
+              "position": 2, 
+              "name": "Web Development",
+              "item": "https://devtachom.com/services/websites"  
+            },{
+              "@type": "ListItem", 
+              "position": 3, 
+              "name": "Mobile Application",
+              "item": "https://devtachom.com/services/mobile"  
+            },{
+              "@type": "ListItem", 
+              "position": 4, 
+              "name": "Enterprise Software",
+              "item": "https://devtachom.com/services/enterprise"  
+            }]}) 
+          }}
+          />
         </Head>
         <body>
           <Main />

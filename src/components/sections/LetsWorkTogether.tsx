@@ -10,7 +10,7 @@ export default function LetsWorkTogether() {
                 <Text fontSize={"2xl"}>Let's work together</Text>
                     <Button
                         as="a"
-                        href="https://ojn1yd5k2bm.typeform.com/to/nA3tGPK2"
+                        href="https://71gkz8c0xni.typeform.com/to/jPiXfJs5"
                         marginX="auto"
                         mt={8}
                         leftIcon={<ArrowForwardIcon />}
