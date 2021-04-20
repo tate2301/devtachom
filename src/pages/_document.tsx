@@ -53,7 +53,7 @@ class MyDocument extends Document {
           
                   <script
                 async
-                src="https://www.googletagmanager.com/gtag/js?id=[G-X82GJN5CN1]"
+                src="https://www.googletagmanager.com/gtag/js?id=UA-195034074-1"
               />
 
           <script
@@ -62,7 +62,7 @@ class MyDocument extends Document {
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
-                    gtag('config', '[G-X82GJN5CN1]');
+                    gtag('config', 'UA-195034074-1');
                 `,
             }}
           />
