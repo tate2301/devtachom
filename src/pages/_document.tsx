@@ -63,9 +63,13 @@ class MyDocument extends Document {
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
                     gtag('config', 'UA-195034074-1');
+                    gtag('config', 'AW-384017805');  
+                    gtag('event', 'conversion', {'send_to': 'AW-384017805/yT6ZCOjR74kCEI3LjrcB'});
+                  
                 `,
             }}
           />
+
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify({ 
