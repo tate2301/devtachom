@@ -19,9 +19,14 @@ class MyDocument extends Document {
           <meta name="mobile-web-app-capable" content="yes" />
           <meta name="theme-color" content="#FFFFFF" />
           <title>Tachom - A full-service digital agency.</title>
-          <meta name="title" content="Tachom - A full-service digital agency."/>
-          <meta name="description" content="We’re a team of designers and developers who spend our time solving problems and telling the stories of great companies."/>
-
+          <title>Tachom - An African Digital Agency</title>
+          <meta name="description" content="Tachom Pvt Ltd specialises in customised software development, mobile application development, web design, web application in various domains and also provide"/>
+          <meta name="keywords" content="software company, software development company, software design, app development software, custom software development company, top software companies, erp software companies, mobile development, advertising agency, digital marketing agency, seo company"/>
+          <meta name="robots" content="index, follow"/>
+          <meta name="copyright" content="Tachom 2021"/>
+          <meta name="language" content="EN"/>
+          <meta name="distribution" content="global"/>
+          <meta name="rating" content="general"/>
           <meta property="og:type" content="website"/>
           <meta property="og:url" content="https://devtachom.com/"/>
           <meta property="og:title" content="Tachom - A full-service digital agency."/>
