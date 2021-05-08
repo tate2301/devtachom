@@ -11,6 +11,19 @@ export default function Blog({data}: any) {
                 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
 
                 <title>Blog | Tachom</title>
+                <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'UA-195034074-1');
+                    gtag('config', 'AW-384017805');  
+                    gtag('event', 'conversion', {'send_to': 'AW-384017805/1pXaCPC7wZECEI3LjrcB'});
+                  
+                `,
+            }}
+          />
             </Head>
             <Box maxWidth={1280} marginX="auto" p={4} mt={8}>
                 <Flex maxWidth={720} h={300} marginX="auto" mb={16}>

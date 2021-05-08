@@ -69,7 +69,7 @@ class MyDocument extends Document {
                     gtag('js', new Date());
                     gtag('config', 'UA-195034074-1');
                     gtag('config', 'AW-384017805');  
-                    gtag('event', 'conversion', {'send_to': 'AW-384017805/yT6ZCOjR74kCEI3LjrcB'});
+                    gtag('event', 'conversion', {'send_to': 'AW-384017805/1pXaCPC7wZECEI3LjrcB'});
                   
                 `,
             }}

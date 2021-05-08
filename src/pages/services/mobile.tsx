@@ -7,6 +7,19 @@ export default function Websites() {
     <Box>
       <Head>
         <title>Mobile Applications | Tachom</title>
+        <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'UA-195034074-1');
+                    gtag('config', 'AW-384017805');  
+                    gtag('event', 'conversion', {'send_to': 'AW-384017805/1pXaCPC7wZECEI3LjrcB'});
+                  
+                `,
+            }}
+          />
       </Head>
       <Flex 
             color="gray.900"

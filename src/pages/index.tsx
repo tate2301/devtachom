@@ -19,6 +19,17 @@ const Home = ({data}: any) => {
             "url": "https://devtachom.com",
             "logo": "https://devtachom.com/img/logo-light.png"
           }`}} />
+                  <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'UA-195034074-1');
+                    gtag('config', 'AW-384017805');                    
+                `,
+            }}
+          />
       </Head>
       <Jumbotron />
       <ReportBanner />
