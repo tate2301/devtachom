@@ -68,7 +68,7 @@ export default function Websites() {
         <Box rounded={"lg"} my={16}>
           <Grid templateColumns={{base:"repeat(1, 1fr)", md: "repeat(2, 1fr)", lg: "repeat(3, 1fr)"}} gap={12} mt={32}>
             <Box>
-              <Heading as="h1" fontSize="xl">Performance</Heading>
+              <Heading as="h2" fontSize="xl">Performance</Heading>
               <Text mt={4}>
                 We build websites using a super modern tech stack and static / server rendering, 
                 giving your website unparalleled performance.
@@ -76,7 +76,7 @@ export default function Websites() {
             </Box>
 
             <Box>
-              <Heading as="h1" fontSize="xl">Accessibility</Heading>
+              <Heading as="h2" fontSize="xl">Accessibility</Heading>
               <Text mt={4}>
                 We use a set of tools during our design and development process to ensure your 
                 site is effectively usable by a wide range of people.
@@ -84,7 +84,7 @@ export default function Websites() {
             </Box>
 
             <Box>
-              <Heading as="h1" fontSize="xl">SEO</Heading>
+              <Heading as="h2" fontSize="xl">SEO</Heading>
               <Text mt={4}>
                 We pay particular attention to technical SEO, including things like structured and 
                 meta data to keep you ranking high on Google.
@@ -92,7 +92,7 @@ export default function Websites() {
             </Box>
 
             <Box>
-              <Heading as="h1" fontSize="xl">SSL</Heading>
+              <Heading as="h2" fontSize="xl">SSL</Heading>
               <Text mt={4}>
                 Sites deployed using our stack come with free Let’s Encrypt SSL, saving you 
                 hundreds of dollars a year.
@@ -100,7 +100,7 @@ export default function Websites() {
             </Box>
 
             <Box>
-              <Heading as="h1" fontSize="xl">Continous Deployment</Heading>
+              <Heading as="h2" fontSize="xl">Continous Deployment</Heading>
               <Text mt={4}>
                 Forget copying files to a server. Continuous deployment integrations mean your 
                 site will automatically deploy every time you commit.
@@ -108,7 +108,7 @@ export default function Websites() {
             </Box>
 
             <Box>
-              <Heading as="h1" fontSize="xl">Content Editing</Heading>
+              <Heading as="h2" fontSize="xl">Content Editing</Heading>
               <Text mt={4}>
                 We use a headless CMS, meaning you and your team can edit your content and images 
                 on the fly, no coding required.
@@ -118,7 +118,7 @@ export default function Websites() {
         </Box>
         <Box fontSize="lg" my={32}>
           <Box backgroundColor={"gray.900"} color="gray.50" py={16} px={8}>
-            <Heading as="h1" fontSize="3xl">Our approach</Heading>
+            <Heading as="h2" fontSize="3xl">Our approach</Heading>
             <Text mt={4}>
               First we define the marketplace pressures, emerging trends and business objectives of 
               your brand. Next we speak with customer and non-customers alike to define opportunities
@@ -136,7 +136,7 @@ export default function Websites() {
         </Box>
         <Box fontSize="lg">
           <Divider my={32} />
-            <Heading as="h1" fontSize="3xl">Design</Heading>
+            <Heading as="h2" fontSize="3xl">Design</Heading>
 
             <Grid templateColumns={{base:"repeat(1, 1fr)", md: "repeat(2, 1fr)"}} gap={12} mt={8}>
               <Box>
@@ -148,7 +148,7 @@ export default function Websites() {
                     src={"https://cdn.dribbble.com/users/127419/screenshots/9023267/media/26ab7fe1986d0ad5ee2dc712c5045e5d.jpg?compress=1&resize=800x600"}/>
                 </Box>
                 <Box fontSize={"lg"} marginY={"auto"} mt={8}>
-                  <Text as={"h1"} fontSize={"2xl"} fontWeight="medium" mt={2}>UI/UX Design</Text>
+                  <Text as={"h2"} fontSize={"2xl"} fontWeight="medium" mt={2}>UI/UX Design</Text>
                   <Text color="gray.600">Defining the user experience</Text>
                   <Text my={4}>
                     We’ll create wireframes that map out the new website experience based on the architecture defined 
@@ -166,7 +166,7 @@ export default function Websites() {
                     src={"https://cdn.dribbble.com/users/757683/screenshots/10841073/media/5f571b4289c8adcfbf41133e6f383307.jpg?compress=1&resize=800x600"}/>
                 </Box>
                 <Box fontSize={"lg"} marginY={"auto"} mt={8}>
-                  <Text as={"h1"} fontSize={"2xl"} fontWeight="medium" mt={2}>Design Systems</Text>
+                  <Text as={"h2"} fontSize={"2xl"} fontWeight="medium" mt={2}>Design Systems</Text>
                   <Text color="gray.600">Structuring our design</Text>
                   <Text my={4}>
                     We’ll design the new site as scalable as possible, starting with a component-based design system 
@@ -188,7 +188,7 @@ export default function Websites() {
               </Box>
               <Box fontSize={"lg"} marginY={"auto"}>
                 <Text color="gray.600">The ultimate deliverable</Text>
-                <Heading as={"h1"} fontSize={"3xl"} my={8} >A stunning website</Heading>
+                <Heading as={"h2"} fontSize={"3xl"} my={8} >A stunning website</Heading>
                 <Text>
                   By the end of our process, you get to share a brand-spanking new, beautiful website you’re 
                   proud of, reflective of who you are and remarkably easy to navigate.

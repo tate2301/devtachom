@@ -52,7 +52,7 @@ const Home = ({data}: any) => {
 
         <Flex shadow="md" my={16} bg={"gray.900"} color="white" p={{base: 4, md: 12}}>
           <Box py={8} maxWidth={600}>
-            <Heading as={"h1"} fontSize={"3xl"}>Create something customers love</Heading>
+            <Heading as={"h2"} fontSize={"3xl"}>Create something customers love</Heading>
             <Text my={8} fontSize={"xl"}>
               Give your brand a home with a custom domain. Then create a website with built-in marketing tools to help you launch it.
             </Text>
@@ -67,7 +67,7 @@ const Home = ({data}: any) => {
 
         <Flex my={16} bg={"gray.900"} color="white" p={{base: 4, md: 12}}>
           <Box py={8} maxWidth={600}>
-            <Heading as={"h1"} fontSize={"3xl"}>Get your business online</Heading>
+            <Heading as={"h2"} fontSize={"3xl"}>Get your business online</Heading>
             <Text my={8} fontSize={"xl"}>
               Give your brand a home with a custom domain. Then create a website with built-in marketing tools to help you launch it.
             </Text>
@@ -82,7 +82,7 @@ const Home = ({data}: any) => {
 
         <Flex my={16} bg={"gray.900"} color="white" p={{base: 4, md: 12}}>
           <Box py={8} maxWidth={600}>
-            <Heading as={"h1"} fontSize={"3xl"}>Manage your business like a boss</Heading>
+            <Heading as={"h2"} fontSize={"3xl"}>Manage your business like a boss</Heading>
             <Text my={8} fontSize={"xl"}>
               Give your brand a home with a custom domain. Then create a website with built-in marketing tools to help you launch it.
             </Text>
@@ -97,7 +97,7 @@ const Home = ({data}: any) => {
         
       </Box>
       <Box px={4} py={20} maxWidth={1280} marginX="auto">
-        <Heading as="h1" fontSize="3xl">Blog</Heading>
+        <Heading as="h2" fontSize="3xl">Blog</Heading>
         <Text fontSize="xl">Read what our team has been thinking about.</Text>
         <Box my={8}>
                     <Box className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">

@@ -16,7 +16,7 @@ export default function Services() {
             />
             <Box maxWidth={720}>
                 <Box my={16}>
-                    <Heading as="h1" fontSize="3xl" fontWeight="bold">
+                    <Heading as="h2" fontSize="3xl" fontWeight="bold">
                         Terms
                     </Heading>
                     <Text my={4}>
@@ -26,7 +26,7 @@ export default function Services() {
                     </Text>
                 </Box>
                 <Box my={16}>
-                    <Heading as="h1" fontSize="3xl" fontWeight="bold">
+                    <Heading as="h2" fontSize="3xl" fontWeight="bold">
                         Disclaimer
                     </Heading>
                     <Text my={4}>
@@ -43,7 +43,7 @@ export default function Services() {
                     </Text>
                 </Box>
                 <Box my={16}>
-                    <Heading as="h1" fontSize="3xl" fontWeight="bold">
+                    <Heading as="h2" fontSize="3xl" fontWeight="bold">
                         Limitations
                     </Heading>
                     <Text my={4}>
@@ -57,7 +57,7 @@ export default function Services() {
                     </Text>
                 </Box>
                 <Box my={16}>
-                    <Heading as="h1" fontSize="3xl" fontWeight="bold">
+                    <Heading as="h2" fontSize="3xl" fontWeight="bold">
                         Accuracy of materials
                     </Heading>
                     <Text my={4}>
@@ -68,7 +68,7 @@ export default function Services() {
                     </Text>
                 </Box>
                 <Box my={16}>
-                    <Heading as="h1" fontSize="3xl" fontWeight="bold">
+                    <Heading as="h2" fontSize="3xl" fontWeight="bold">
                         Links
                     </Heading>
                     <Text my={4}>
@@ -78,7 +78,7 @@ export default function Services() {
                     </Text>
                 </Box>
                 <Box my={16}>
-                    <Heading as="h1" fontSize="3xl" fontWeight="bold">
+                    <Heading as="h2" fontSize="3xl" fontWeight="bold">
                         Modifications
                     </Heading>
                     <Text my={4}>
@@ -87,7 +87,7 @@ export default function Services() {
                     </Text>
                 </Box>
                 <Box my={16}>
-                    <Heading as="h1" fontSize="3xl" fontWeight="bold">
+                    <Heading as="h2" fontSize="3xl" fontWeight="bold">
                         Governing law
                     </Heading>
                     <Text my={4}>

@@ -70,7 +70,7 @@ export default function Process(props: any) {
               src={"https://www.bluelabellabs.com/wp-content/uploads/2018/08/img-process1.jpg"}/>
           </Box>
           <Box fontSize={"md"} marginY={"auto"}>
-            <Heading as={"h1"} fontSize={"2xl"} my={8} >Design Sprints</Heading>
+            <Heading as={"h2"} fontSize={"2xl"} my={8} >Design Sprints</Heading>
             <Text>
               Inspired by the now-famous Google Ventures methodology, each project starts with an intense,
               5-day discovery process that ends with empirical validation with real clients.
@@ -90,7 +90,7 @@ export default function Process(props: any) {
               src={"https://www.bluelabellabs.com/wp-content/uploads/2018/08/img-process3.jpg"}/>
           </Box>
           <Box fontSize={"md"} marginY={"auto"}>
-            <Heading as={"h1"} fontSize={"2xl"} my={8}>Develop & Test</Heading>
+            <Heading as={"h2"} fontSize={"2xl"} my={8}>Develop & Test</Heading>
             <Text>
               Our scrum-based Agile development methodology ensures
               frequent builds and gives you plenty of time to test and adjust.
@@ -110,7 +110,7 @@ export default function Process(props: any) {
               src={"https://www.bluelabellabs.com/wp-content/uploads/2018/08/img-process3.jpg"}/>
           </Box>
           <Box fontSize={"md"} marginY={"auto"}>
-            <Heading as={"h1"} fontSize={"2xl"} my={8}>Product Launch</Heading>
+            <Heading as={"h2"} fontSize={"2xl"} my={8}>Product Launch</Heading>
             <Text>
               Getting an app live on the web or submitting an app to the App Store can be a tricky process,
               but we will help you along the way to get your app published, so you can start monetizing.
@@ -122,7 +122,7 @@ export default function Process(props: any) {
       </Grid>
       <Flex backgroundColor="gray.800" color="white" h={400}>
         <Box maxWidth={1280} marginX="auto" marginY="auto" p={4}>
-          <Heading as="h1" fontSize={"4xl"}>Everything you need to be everywhere you want.</Heading>
+          <Heading as="h2" fontSize={"4xl"}>Everything you need to be everywhere you want.</Heading>
           <Text fontSize={"lg"}>From email campaigns to Yelp listings, Digital Marketing Suite has everything your business needs to keep customers informed and engaged.</Text>
         </Box>
       </Flex>
