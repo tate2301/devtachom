@@ -78,7 +78,7 @@ export default function Navbar(props: any) {
                     <MenuItem to="/services">Services</MenuItem>
                     {false && <MenuItem to="/about">About</MenuItem>}
                     <MenuItem to="/blog">Blog</MenuItem>
-                    <MenuItem to="https://71gkz8c0xni.typeform.com/to/jPiXfJs5">
+                    <MenuItem to="https://tachom.typeform.com/to/jPiXfJs5">
                         <Button
                         leftIcon={<ArrowForwardIcon />}
                         outlineColor="gray.900"
