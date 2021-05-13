@@ -112,6 +112,7 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <div data-tf-chat data-tf-tooltip="Hey 👋 How can I help you? " data-tf-popover="jPiXfJs5" data-tf-button-color="#0445AF"></div><script src="//embed.typeform.com/next/embed.js"></script>
         </body>
       </Html>
     );
