@@ -113,6 +113,8 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
           <div data-tf-chat data-tf-tooltip="Hey 👋 How can I help you? " data-tf-popover="jPiXfJs5" data-tf-button-color="#0445AF"></div><script src="//embed.typeform.com/next/embed.js"></script>
+          <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+  1       <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerPolicy="no-referrer-when-downgrade" /></noscript>
         </body>
       </Html>
     );
