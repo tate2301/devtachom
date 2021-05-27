@@ -1,37 +1,43 @@
-import { Box, Button, Flex, Grid, Heading, Image, Tag, Text } from "@chakra-ui/react";
+import { Box, Button, Fade, Flex, Grid, Heading, Image, Tag, Text } from "@chakra-ui/react";
 
 export default function Jumbotron(props: any) {
     return (
-        <Flex 
+        <Flex
             color="gray.900"
-            px={4} 
-            style={{height: "100vh"}}>
+            backgroundColor="brand.gray_background"
+            px={4}
+            style={{height: "120vh"}}>
             <Grid textAlign="center" templateColumns={{base:"repeat(1, 1fr)"}} maxWidth={720} w="full" marginX="auto" marginY={"auto"}>
                 <Box mt={{base: 16, md: 0}} pr={{base: 0, lg: 12}}>
                     <Text my={4} fontSize="sm" fontWeight="semibold">TACHOM DEVELOPERS</Text>
-                    <Heading
-                        as="h1"
-                        fontWeight="bold"
-                        fontSize={{ base: '3xl', sm: '4xl', md: '7xl' }}
+                    <Fade in={true}>
+                        <Heading
+                            as="h1"
+                            fontWeight="bold"
+                            fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
                         >
-                          We drive digital transformation.</Heading>
+                          Digital Products You'll Love!
+                        </Heading>
+                    </Fade>
+                    <Fade in={true}>
                         <Text
                             my={8}
                             fontSize={{ base: 'lg', md: '2xl' }}
                             py={2}>
-                                We work with clients end-to-end, from defining and enabling the vision, 
-                                to ensuring ongoing market relevance. Our diverse teams lead with empathy, data and creativity—always in service of the experience.
+                                We are a hybrid team of designers, developers, project managers, and strategists - that likes to code while we design.
                         </Text>
+                    </Fade>
 
-                        <Button 
-                            colorScheme={"white"} 
+                    <Fade in={true}>
+                        <Button
+                            colorScheme={"yellow"}
                             size="lg"
-                            backgroundColor={"gray.900"}
-                            rounded="none"
+                            rounded="full"
                             px={8}
                             >
                                 Let's talk --&gt;
                         </Button>
+                    </Fade>
                 </Box>
 
             </Grid>

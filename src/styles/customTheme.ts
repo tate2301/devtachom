@@ -5,7 +5,7 @@ const customTheme = extendTheme({
     ...theme.fonts,
     /** Example */
     body: "Inter, sans-serif",
-    heading: "Playfair Display, serif",
+    heading: "Libre Baskerville, serif",
   },
   colors: {
     ...theme.colors,
@@ -31,6 +31,9 @@ const customTheme = extendTheme({
     blue: {
       ...theme.colors.blue,
       100: "#c5dbf2"
+    },
+    brand: {
+      gray_background: "#f6f6f4"
     }
   },
   components: {

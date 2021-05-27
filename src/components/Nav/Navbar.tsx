@@ -83,8 +83,8 @@ export default function Navbar(props: any) {
                         leftIcon={<ArrowForwardIcon />}
                         outlineColor="gray.900"
                         variant={scrolled ? "solid" : "outline"}
-                        colorScheme={scrolled ? "green" : "white"}
-                        rounded="none">
+                        colorScheme={scrolled ? "yellow" : "white"}
+                        rounded="full">
                             Start a project
                         </Button>
                     </MenuItem>

@@ -18,8 +18,6 @@ class MyDocument extends Document {
           <meta name="format-detection" content="telephone=no" />
           <meta name="mobile-web-app-capable" content="yes" />
           <meta name="theme-color" content="#FFFFFF" />
-          <title>Tachom - A full-service digital agency.</title>
-          <title>Tachom - An African Digital Agency</title>
           <meta name="description" content="Established in 2020 by a team of young expert software professionals, Tachom specialises in software development, mobile app dev and website design."/>
           <meta name="keywords" content="it companies south africa,apps in development,it companies Johannesburg,it companies Harare,developing mobile app,builder apps,software companies in south africa,software companies in Zimbabwe,software development companies,apps development company,software companies in Harare,android app development,software development companies in cape town,software development companies in south africa,software development companies johannesburg,software companies in johannesburg,develop custom software,software app developers,software developers south africa,top software developer companies,app developers cape town,software developer jobs south africa,develop mobile application,creating app for android,app developers,software create app,design an app for android,app programmer,software for apps,cost of an app development,software to build an app,creating an app from a website,software companies in pretoria,build mobile apps,android app building,website dev company,software development south africa,software engineering companies in south africa,software companies in gauteng,list of software development companies in south africa,list of software development companies in Zimbabwe,software mobile app development,free software for app development,software development cape town,software development harare,software development companies in pretoria,software developer cape town,mobile app developer company,best app developer software,app developer near me,app development software for android,best app builder,free app builder software,digital marketing is,online marketer,marketer agency,marketing companies,advertising agencies in cape town,advertising agencies in Zimbabwe,agency digital,digital marketing strategies,online advertising,marketing companies in south africa,marketing companies in Harare,companies digital marketing,digital marketing agencies in johannesburg,digital marketing agencies in Harare,digital marketing cape town,marketing agencies in south africa,digital marketing agencies cape town,internet marketing,marketing agencies in cape town,marketing agencies in johannesburg,media companies in south africa,advertising digital,digital marketing agencies in south africa,digital marketing as a service,digital marketing in south africa,marketing companies in cape town,marketing companies in zimbabwe,marketing companies in johannesburg,marketing companies in harare,social media marketing agencies,agency online marketing,digital marketing companies in south africa,digital agency cape town,web designing sites"/>    
           <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -57,37 +55,38 @@ class MyDocument extends Document {
           <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"/>
           <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
           <link rel="manifest" href="/manifest.json"/>
+          <link rel="preconnect" href="https://fonts.gstatic.com"/>
+          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet"/>
           <meta name="msapplication-TileColor" content="#ffffff"/>
           <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
           <meta name="theme-color" content="#ffffff"></meta>
-          
-                  <script
-                async
-                src="https://www.googletagmanager.com/gtag/js?id=UA-195034074-1"
-              />
+          <script
+            defer
+            src="https://www.googletagmanager.com/gtag/js?id=UA-195034074-1"
+          />
 
           <script
+            defer
             dangerouslySetInnerHTML={{
               __html: `
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
                     gtag('config', 'UA-195034074-1');
-                    gtag('config', 'AW-384017805');  
+                    gtag('config', 'AW-384017805');
                     gtag('event', 'conversion', {'send_to': 'AW-384017805/1pXaCPC7wZECEI3LjrcB'});
-                  
                 `,
             }}
           />
 
           <script
             type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({ 
-            "@context": "https://schema.org/", 
-            "@type": "BreadcrumbList", 
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "BreadcrumbList",
             "itemListElement": [{
-              "@type": "ListItem", 
-              "position": 1, 
+              "@type": "ListItem",
+              "position": 1,
               "name": "Branding",
               "item": "https://devtachom.com/services/branding"  
             },{
@@ -112,8 +111,9 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <div data-tf-chat data-tf-tooltip="Hey 👋 How can I help you? " data-tf-popover="jPiXfJs5" data-tf-button-color="#0445AF"></div><script src="//embed.typeform.com/next/embed.js"></script>
-          <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+          <div data-tf-chat data-tf-tooltip="Hey 👋 How can I help you? " data-tf-popover="jPiXfJs5" data-tf-button-color="#0445AF"></div>
+          <script defer src="//embed.typeform.com/next/embed.js"></script>
+          <script defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
   1       <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerPolicy="no-referrer-when-downgrade" /></noscript>
         </body>
       </Html>

@@ -1,7 +1,6 @@
 import { Box, Flex, Heading, Link, Text, Image } from "@chakra-ui/react";
 import Head from "next/head";
 import Feature from "../components/sections/Feature";
-import HeadingSection from "../components/sections/HeadingSection";
 import Jumbotron from "../components/sections/Jumbotron";
 import ReportBanner from "../components/sections/ReportBanner";
 import { IArticleProps, request } from "../lib/dato";
@@ -19,21 +18,19 @@ const Home = ({data}: any) => {
             "url": "https://devtachom.com",
             "logo": "https://devtachom.com/img/logo-light.png"
           }`}} />
-                  <script
+        <script
             dangerouslySetInnerHTML={{
               __html: `
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
                     gtag('config', 'UA-195034074-1');
-                    gtag('config', 'AW-384017805');                    
+                    gtag('config', 'AW-384017805');
                 `,
             }}
           />
       </Head>
       <Jumbotron />
-      <ReportBanner />
-      
       <Feature />
 
       <Box px={4} maxWidth={1280} marginX="auto">
@@ -41,7 +38,7 @@ const Home = ({data}: any) => {
             <Box py={8} maxWidth={600}>
               <Heading as={"h1"} fontSize={"3xl"}>Give your business a headstart</Heading>
               <Text my={8} fontSize={"xl"}>
-                Give your brand a home with a custom domain. Then create a website with built-in marketing tools to help you launch it.
+                We create memorable visual identities that help you stand apart from the crowd. Explore the world of the image to discover what your brand can be.
               </Text>
 
               <Link  fontSize="xl" color="yellow.500" href="/services/branding">
@@ -50,11 +47,26 @@ const Home = ({data}: any) => {
             </Box>
           </Flex>
 
+        <Flex my={16} bg={"gray.900"} color="white" p={{base: 4, md: 12}}>
+          <Box py={8} maxWidth={600}>
+            <Heading as={"h2"} fontSize={"3xl"}>Get your business online</Heading>
+            <Text my={8} fontSize={"xl"}>
+              We pride ourselves in creating websites that are clean, simple, and responsive. Our websites convert traffic into customers through the power of usability.
+            </Text>
+
+            <Text mt={8}>
+              <Link  fontSize="xl" color="yellow.500" href="/services/websites">
+                Website Development ---&gt;
+              </Link>
+            </Text>
+          </Box>
+        </Flex>
+
         <Flex shadow="md" my={16} bg={"gray.900"} color="white" p={{base: 4, md: 12}}>
           <Box py={8} maxWidth={600}>
             <Heading as={"h2"} fontSize={"3xl"}>Create something customers love</Heading>
             <Text my={8} fontSize={"xl"}>
-              Give your brand a home with a custom domain. Then create a website with built-in marketing tools to help you launch it.
+              Our mobile applications combine the best UI and UX designs to create something customers love to use, and help businesses succeed.
             </Text>
 
             <Text mt={8}>
@@ -67,24 +79,9 @@ const Home = ({data}: any) => {
 
         <Flex my={16} bg={"gray.900"} color="white" p={{base: 4, md: 12}}>
           <Box py={8} maxWidth={600}>
-            <Heading as={"h2"} fontSize={"3xl"}>Get your business online</Heading>
-            <Text my={8} fontSize={"xl"}>
-              Give your brand a home with a custom domain. Then create a website with built-in marketing tools to help you launch it.
-            </Text>
-
-            <Text mt={8}>
-              <Link  fontSize="xl" color="yellow.500" href="/services/websites">
-                Website Development ---&gt;
-              </Link>
-            </Text>
-          </Box>
-        </Flex>
-
-        <Flex my={16} bg={"gray.900"} color="white" p={{base: 4, md: 12}}>
-          <Box py={8} maxWidth={600}>
             <Heading as={"h2"} fontSize={"3xl"}>Manage your business like a boss</Heading>
             <Text my={8} fontSize={"xl"}>
-              Give your brand a home with a custom domain. Then create a website with built-in marketing tools to help you launch it.
+            Our job is to help you build your business, and we pour our hearts into creating software that's easy to use.
             </Text>
 
             <Text mt={8}>
@@ -106,10 +103,10 @@ const Home = ({data}: any) => {
                                 <Box h={300} w={{base: "full"}}>
                                     <Link href={`blog/${article.slug}`}>
                                         <a>
-                                            <Image 
+                                            <Image
                                                 src={article.thumbnail?.url}
                                                 objectFit="cover" 
-                                                h="full"
+                                                h={300}
                                                 w="full"
                                                 rounded="lg"
                                             />
@@ -136,7 +133,7 @@ const Home = ({data}: any) => {
                                     <Box mt={4}>
                                         <Flex>
                                             <Box h={12} w={12} mr={2}>
-                                                <Image 
+                                                <Image
                                                     src={article.author.profilepicture?.url} 
                                                     h={12}
                                                     w={12}
@@ -147,10 +144,10 @@ const Home = ({data}: any) => {
                                             </Box>
                                             <Box>
                                                 <Text color="gray.800" fontWeight="bold">
-                                                    {article.author.fullname}    
+                                                    {article.author.fullname}
                                                 </Text>
                                                 <Text color="gray.800">
-                                                    {article.author.jobposition}    
+                                                    {article.author.jobposition}
                                                 </Text>
                                             </Box>
                                         </Flex>
